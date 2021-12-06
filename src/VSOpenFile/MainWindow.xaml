@@ -1,0 +1,24 @@
+﻿<Window 
+	x:Class="KsWare.VSOpenFile.MainWindow"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	Title="Open FIle in Visual Studio"
+	Height="150"
+	Width="369">
+<DockPanel Margin="3">
+	<Button Style="{StaticResource LinkButton}" DockPanel.Dock="Bottom" Content="About..." Click="About_Click" FontSize="10" HorizontalAlignment="Right"/>
+	<StackPanel VerticalAlignment="Center">
+		<TextBlock Text="Filename:"/>
+		<TextBox x:Name="FileNameTextBox" KeyDown="FileNameTextBox_KeyDown" />
+		<Grid>
+			<CheckBox Content="Use Existing Instance" IsChecked="True" Margin="0 6 0 0" IsTabStop="False"/>
+			<Canvas Background="#80FFFFFF"/>
+		</Grid>
+		<Button Content="Open" Click="Open_Click" HorizontalAlignment="Center" Padding="20 5" Margin="0 6 0 0" IsDefault="True"/>
+	</StackPanel>
+</DockPanel>
+	
+</Window>

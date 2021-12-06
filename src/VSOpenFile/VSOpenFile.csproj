@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>KsWare.VSOpenFile</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="EnvDTE" />
+    <PackageReference Include="EnvDTE80" />
+    <PackageReference Include="Microsoft.VisualStudio.Setup.Configuration.Interop" Version="3.0.4492" />
+  </ItemGroup>
+</Project>
